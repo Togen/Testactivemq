@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="xmtest@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="xmtest">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="test"/>
+    <table id="6" parent="2" name="resendlogging"/>
+    <column id="7" parent="6" name="ID">
+      <Position>1</Position>
+      <Comment>流水号</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="8" parent="6" name="SOURCE">
+      <Position>2</Position>
+      <Comment>数据来源</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="9" parent="6" name="PROJECT_NAME">
+      <Position>3</Position>
+      <Comment>项目名</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="10" parent="6" name="QUEUE_NAME">
+      <Position>4</Position>
+      <Comment>队列名</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="11" parent="6" name="MESSAGE">
+      <Position>5</Position>
+      <Comment>消息体</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="12" parent="6" name="MESSAGE_PROPERTIES">
+      <Position>6</Position>
+      <Comment>消息属性</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="13" parent="6" name="SEND_NUM">
+      <Position>7</Position>
+      <Comment>发送次数</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="14" parent="6" name="SEND_STATUS">
+      <Position>8</Position>
+      <Comment>发送状态</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="15" parent="6" name="CREATE_TIME">
+      <Position>9</Position>
+      <Comment>创建时间</Comment>
+      <DataType>varchar(17)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="6" name="UPDATE_TIME">
+      <Position>10</Position>
+      <Comment>更新时间</Comment>
+      <DataType>varchar(17)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="6" name="WEBSERVICE_URL">
+      <Position>11</Position>
+      <Comment>WebService url地址</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="18" parent="6" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
